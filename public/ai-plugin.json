@@ -8,9 +8,9 @@
     "type": "user_http",
     "authorization_type": "bearer"
   },
-  "api": {
-    "type": "openapi",
-    "url": "https://example.com/oura-openapi.yaml"
+ "api": {
+  "type": "openapi",
+  "url": "https://oura-chatgpt-plugin.vercel.app/oura-openapi.yaml"
   },
   "contact_email": "you@example.com",
   "legal_info_url": "https://yourdomain.com/legal"
