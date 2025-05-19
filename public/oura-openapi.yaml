@@ -1,0 +1,74 @@
+openapi: 3.0.0
+info:
+  title: Oura Personal API
+  version: 1.0.0
+servers:
+  - url: https://api.ouraring.com/v2
+paths:
+  /usercollection/daily_activity:
+    get:
+      summary: Get Daily Activity Data
+      operationId: getDailyActivity
+      parameters:
+        - name: start_date
+          in: query
+          required: false
+          schema:
+            type: string
+            format: date
+        - name: end_date
+          in: query
+          required: false
+          schema:
+            type: string
+            format: date
+      responses:
+        "200":
+          description: Daily activity data retrieved
+  /usercollection/daily_readiness:
+    get:
+      summary: Get Daily Readiness Data
+      operationId: getDailyReadiness
+      parameters:
+        - name: start_date
+          in: query
+          required: false
+          schema:
+            type: string
+            format: date
+        - name: end_date
+          in: query
+          required: false
+          schema:
+            type: string
+            format: date
+      responses:
+        "200":
+          description: Readiness data retrieved
+  /usercollection/daily_sleep:
+    get:
+      summary: Get Daily Sleep Data
+      operationId: getDailySleep
+      parameters:
+        - name: start_date
+          in: query
+          required: false
+          schema:
+            type: string
+            format: date
+        - name: end_date
+          in: query
+          required: false
+          schema:
+            type: string
+            format: date
+      responses:
+        "200":
+          description: Sleep data retrieved
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+security:
+  - bearerAuth: []
