@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/.well-known/ai-plugin.json",
-      "destination": "/public/ouragpt-ai-plugin.json"
+      "destination": "/public/ai-plugin.json"
     }
   ]
 }
