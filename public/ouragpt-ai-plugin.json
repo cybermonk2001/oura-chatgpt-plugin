@@ -1,0 +1,18 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Oura Ring Assistant",
+  "name_for_model": "oura_ring_assistant",
+  "description_for_human": "Access your Oura sleep, activity, and readiness data.",
+  "description_for_model": "Use this plugin to retrieve user's Oura sleep, readiness, and activity data.",
+  "auth": {
+    "type": "user_http",
+    "authorization_type": "bearer"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://YOUR-VERCEL-URL/public/openapi.yaml"
+  },
+  "logo_url": "https://YOUR-VERCEL-URL/public/logo.png",
+  "contact_email": "you@example.com",
+  "legal_info_url": "https://yourdomain.com/legal"
+}
